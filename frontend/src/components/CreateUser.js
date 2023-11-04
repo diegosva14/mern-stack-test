@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-const URI = 'https://sdbackend.onrender.com/api/users/';
+const URI = 'https://notesappback-xvcl.onrender.com/api/users/';
 
 
 export default class CreateUser extends Component {

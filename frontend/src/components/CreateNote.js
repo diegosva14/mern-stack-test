@@ -3,8 +3,8 @@ import axios from 'axios'
 import { useState } from 'react';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-const URI_USER = 'https://sdbackend.onrender.com/api/users/';
-const URI_NOTE = 'https://sdbackend.onrender.com/api/notes/';
+const URI_USER = 'https://notesappback-xvcl.onrender.com/api/users';
+const URI_NOTE = 'https://notesappback-xvcl.onrender.com/api/notes/';
 
 
 export default class CreateNote extends Component {
@@ -51,9 +51,9 @@ export default class CreateNote extends Component {
             author: this.state.userSelected
         }
         if(this.state.editing){
-            await axios.put('https://sdbackend.onrender.com/api/notes/' + this.state._id, newNote)
+            await axios.put('https://notesappback-xvcl.onrender.com/api/notes/' + this.state._id, newNote)
         }else{
-            await axios.post('https://sdbackend.onrender.com/api/notes/', newNote);
+            await axios.post('https://notesappback-xvcl.onrender.com/api/notes/', newNote);
         }
 
 
