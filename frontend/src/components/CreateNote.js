@@ -51,9 +51,9 @@ export default class CreateNote extends Component {
             author: this.state.userSelected
         }
         if(this.state.editing){
-            await axios.put(URI_NOTE + this.state._id, newNote)
+            await axios.put('https://mern-stack-test-frontend-qjct.onrender.com/api/notes' + this.state._id, newNote)
         }else{
-            await axios.post(URI_NOTE, newNote);
+            await axios.post('https://mern-stack-test-frontend-qjct.onrender.com/api/notes', newNote);
         }
 
 
