@@ -16,7 +16,7 @@ export default class NotesList extends Component {
         this.setState({ notes: res.data })
     }
     deleteNote = async (id) => {
-        await axios.delete(API_URI + id);
+        await axios.delete('https://mern-stack-test.onrender.com/api/notes/' + id);
         this.getNotes();
     }
 
@@ -47,6 +47,9 @@ export default class NotesList extends Component {
                                     >
                                         Delete
                                     </button>
+                                    <button className='btn btn=danger' onClick={() => {if(window.confirm('Are you sure you want to delete this note?')) this.deleteNote(note._id)}}>
+                          
+                        </button>
                                 </div>
 
                             </div>
