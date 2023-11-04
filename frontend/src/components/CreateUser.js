@@ -33,7 +33,7 @@ export default class CreateUser extends Component {
     }
 
     deleteUser = async (id) => {
-        await axios.delete(URI + id);
+        await axios.delete('https://mern-stack-test.onrender.com/api/users/' + id);
         this.getUsers();
     }
     getUser = async (id) =>{
