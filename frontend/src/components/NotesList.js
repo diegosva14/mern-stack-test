@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { format } from 'timeago.js'
 import { Link } from 'react-router-dom'
-const API_URI = 'https://notesappback-xvcl.onrender.com/api/notes/';
+const API_URI = 'https://mern-stack-test.onrender.com/api/notes';
 export default class NotesList extends Component {
     state = {
         notes: []
