@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import { useState } from 'react';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-const URI_USER = 'https://mern-stack-test-frontend-qjct.onrender.com/api/users';
-const URI_NOTE = 'https://mern-stack-test-frontend-qjct.onrender.com/api/notes';
+const URI_USER = 'https://mern-stack-test.onrender.com/api/users';
+const URI_NOTE = 'https://mern-stack-test.onrender.com/api/notes';
 
 
 export default class CreateNote extends Component {
