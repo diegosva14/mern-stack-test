@@ -20,7 +20,7 @@ function App() {
     
     <div className="container p-4">
     
-      <Route path="/" exact component={SignUp} />
+      <Route path="/register" exact component={SignUp} />
       <Route path={"/edit/:id"} component={CreateNote} />
       <Route path="/create" component={CreateNote} />
       <Route path="/user" component={CreateUser} />
