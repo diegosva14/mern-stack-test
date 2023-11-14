@@ -15,7 +15,7 @@ function App() {
     <Router>
     
 
-    
+    <SignUp/>
     
     <div className="container p-4">
     
