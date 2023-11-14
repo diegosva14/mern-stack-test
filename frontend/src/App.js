@@ -7,7 +7,7 @@ import NotesList from './components/NotesList';
 import CreateNote from './components/CreateNote';
 import CreateUser from './components/CreateUser';
 import SignUp from './components/SignUp';
-import Login from './components/Login';
+
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
     <Router>
     
 
-    <SignUp/>
+    
     
     <div className="container p-4">
     
@@ -23,7 +23,7 @@ function App() {
       <Route path={"/edit/:id"} component={CreateNote} />
       <Route path="/create" component={CreateNote} />
       <Route path="/user" component={CreateUser} />
-      <Route path="/login" exact component={Login}/>
+      
       </div>
     </Router>
   );
