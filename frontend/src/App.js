@@ -10,8 +10,11 @@ import SignUp from './components/SignUp';
 
 function App() {
   return (
+    
     <Router>
+    <div>
     <SignUp/> 
+    </div>
     
     <div className="container p-4">
     <Route path="/signup" component={SignUp} /> 
