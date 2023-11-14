@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class NotesList extends Component {
 
     render(){
+        return(
         <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>
             <div className='bg-white p-3 rounded w-25'>
                 <h2>REGISTER</h2>
@@ -16,7 +17,7 @@ export default class NotesList extends Component {
                             type='text'
                             placeholder='Enter Name'
                             autoComplete='off'
-                            name='email'
+                            name='name'
                             className='form-control rounded-0'
                         
                         />
@@ -61,8 +62,8 @@ export default class NotesList extends Component {
 
 
         </div>
-
+        );
 
     }
+    }
 
-}
