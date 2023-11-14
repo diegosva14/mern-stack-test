@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
     <SignUp/> 
-    <Navigation/>
+    
     <div className="container p-4">
     <Route path="/signup" component={SignUp} /> 
       <Route path="/" exact component={NotesList} />
