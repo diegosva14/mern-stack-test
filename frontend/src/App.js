@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import NotesList from './components/NotesList';
@@ -15,9 +15,11 @@ function App() {
     <Router>
     
      
+    <Routes>
+      <Route path='/register' component={<SignUp />}></Route>
+      
+    </Routes>
     
-    <Route path="/signup" component={SignUp} />
-    <Route path="/login" component={Login} />
     <div className="container p-4">
     
       <Route path="/" exact component={NotesList} />
