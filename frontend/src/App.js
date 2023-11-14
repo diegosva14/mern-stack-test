@@ -19,10 +19,10 @@ function App() {
     
     <Route path="/" exact component={SignUp} />
     <Route path="/login" component={Login} />
-    <Route path="/navigation" component={Navigation} />
+    
     <div className="container p-4">
     
-      
+      <Navigation/>
       <Route path={"/edit/:id"} component={CreateNote} />
       <Route path="/create" component={CreateNote} />
       <Route path="/user" component={CreateUser} />
