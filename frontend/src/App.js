@@ -12,9 +12,9 @@ function App() {
   return (
     
     <Router>
-    <div>
-    <SignUp/> 
-    </div>
+    
+    <Navigation/> 
+    
     
     <div className="container p-4">
     <Route path="/signup" component={SignUp} /> 
