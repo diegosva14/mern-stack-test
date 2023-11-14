@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default class NotesList extends Component {
+export default class SignUp extends Component {
 
     render(){
         return(
