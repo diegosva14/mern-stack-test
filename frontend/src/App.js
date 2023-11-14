@@ -25,6 +25,7 @@ function App() {
       <Navigation/>
       <Route path={"/edit/:id"} component={CreateNote} />
       <Route path="/create" component={CreateNote} />
+      <Route path="/notes" component={NotesList} />
       <Route path="/user" component={CreateUser} />
       
       
