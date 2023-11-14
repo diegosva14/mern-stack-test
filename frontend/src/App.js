@@ -14,11 +14,8 @@ function App() {
     
     <Router>
     
-     
-    <Routes>
-      
-      
-    </Routes>
+
+    <SignUp/>
     
     <div className="container p-4">
     
@@ -26,6 +23,7 @@ function App() {
       <Route path={"/edit/:id"} component={CreateNote} />
       <Route path="/create" component={CreateNote} />
       <Route path="/user" component={CreateUser} />
+      <Route path="/login" exact component={Login}/>
       </div>
     </Router>
   );
