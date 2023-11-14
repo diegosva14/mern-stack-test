@@ -16,7 +16,7 @@ function App() {
     
      
     <Routes>
-      <Route path='/register' component={<SignUp />}></Route>
+      
       
     </Routes>
     
