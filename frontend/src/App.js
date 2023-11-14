@@ -19,6 +19,7 @@ function App() {
     
     <Route path="/" exact component={SignUp} />
     <Route path="/login" component={Login} />
+    <Route path="/navigation" component={Navigation} />
     <div className="container p-4">
     
       

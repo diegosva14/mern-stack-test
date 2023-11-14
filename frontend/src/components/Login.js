@@ -40,7 +40,7 @@ export default class SignUp extends Component {
                     Register
                     </button>
                     </form>
-                    <Link to='/login' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>
+                    <Link to='/navigation' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>
                         Login
                     </Link>                
             </div>
