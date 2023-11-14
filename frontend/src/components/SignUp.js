@@ -1,9 +1,18 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component } from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 export default class SignUp extends Component {
+   
 
+    state = {
+        name: '',
+        email: '',
+        password: ''
+    }
+
+         
     render(){
         return(
         <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>
